@@ -1,0 +1,12 @@
+[user]
+	name = Chris Roma
+	email = croma@liaisonedu.com
+[push]
+	default = simple
+
+[alias] 
+	co = checkout
+[core]
+	editor = vim
+[github]
+	user = Amor-Roma
