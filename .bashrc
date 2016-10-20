@@ -31,6 +31,6 @@ alias cd..='cd ..' # eliminate cd typo error
 alias dt='date "+%F %T"' #print date and time in 12 hour format
 
 # record command history with date and time
-#PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo `dt` `pwd` $$ $USER \
-#               "$(history 1)" >> ~/.bash_eternal_history'
+PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo `dt` `pwd` $$ $USER \
+               "$(history 1)" >> ~/.bash_eternal_history'
 
