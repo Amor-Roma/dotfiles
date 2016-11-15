@@ -10,6 +10,7 @@ call vundle#begin()
 " Put more plugins here
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-rails'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-endwise'
@@ -18,6 +19,39 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tomasr/molokai'
 Plugin 'tpope/vim-bundler'
 Plugin 'kien/ctrlp.vim'
+Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'tpope/vim-haml'
+
+"Ctrlp
+ map <leader>t :CtrlPCurWD<cr>
+ let g:ctrlp_match_window_reversed=0
+ let g:ctrlp_match_window_bottom=1
+ let g:ctrlp_map = ''
+
+"disable arrow keys
+ noremap  <Up> "
+ noremap! <Up> <Esc>
+ noremap  <Down> ""
+ noremap! <Down> <Esc>
+ noremap  <Left> "
+ noremap! <Left> <Esc>
+ noremap  <Right> ""
+ noremap! <Right> <Esc>
+
+" highlight search
+ set hlsearch
+ set incsearch
+
+" " show commands for tab completion
+ set wildmenu
+
+" switch b/t buffers
+ map <C-p> :bp <CR>
+ map <C-n> :bn <CR>
+
+" buffergator
+ let g:buffergator_suppress_keymaps = 1
+ nnoremap <silent> <Leader>b :BuffergatorToggle<CR>
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
