@@ -35,3 +35,5 @@ alias rabbit='rabbitmq-server -detached' # start the rabbit mq server in the bac
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo `dt` `pwd` $$ $USER \
                "$(history 1)" >> ~/.bash_eternal_history'
 
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
