@@ -106,3 +106,8 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
+
+" Spell checking and auto complete (using tab)
+setlocal spell
+set complete+=kspell
+imap <Tab> <C-P>
