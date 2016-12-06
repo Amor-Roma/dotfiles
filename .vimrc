@@ -22,6 +22,9 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'tpope/vim-haml'
 
+" Toggle Paste
+set pastetoggle=<leader>p
+
 "Ctrlp
  map <leader>t :CtrlPCurWD<cr>
  let g:ctrlp_match_window_reversed=0
