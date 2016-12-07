@@ -82,6 +82,10 @@ command Xml  %!xmllint --format %
 command Indent IndentGuidesToggle
 " Delete trailing white space
 command Rtws %s/\s\+$//e
+" Print current path
+command File !echo "current file: %"
+" Reload .vimrc
+command Reload source $MYVIMRC
 
 " Color scheme
 set background=dark
@@ -114,3 +118,7 @@ autocmd BufWinLeave * call clearmatches()
 setlocal spell
 set complete+=kspell
 imap <Tab> <C-P>
+
+" Prevents accidental quit
+:cnoreabbrev wq w<bar>bd
+:cnoreabbrev q bd
