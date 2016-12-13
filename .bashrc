@@ -30,6 +30,8 @@ alias ls='ls -lahFG' # print a more detailed list
 alias cd..='cd ..' # eliminate cd typo error
 alias dt='date "+%F %T"' #print date and time in 12 hour format
 alias rabbit='rabbitmq-server -detached' # start the rabbit mq server in the background
+alias dcsh='docker-compose exec app bash' # Docker bash shell
+alias dc='docker-compose'
 
 # record command history with date and time
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo `dt` `pwd` $$ $USER \
