@@ -32,6 +32,10 @@ alias dt='date "+%F %T"' #print date and time in 12 hour format
 alias rabbit='rabbitmq-server -detached' # start the rabbit mq server in the background
 alias dcsh='docker-compose exec app bash' # Docker bash shell
 alias dc='docker-compose'
+alias loader="cd ~/webadmit_cas3_etl_loader"
+alias trans="cd ~/webadmit_cas3_etl_transformer"
+alias web="cd ~/WebAdMIT"
+alias wa-="cd ~/wa-devenv"
 
 # record command history with date and time
 PROMPT_COMMAND="${PROMPT_COMMAND:+$PROMPT_COMMAND ; }"'echo `dt` `pwd` $$ $USER \
